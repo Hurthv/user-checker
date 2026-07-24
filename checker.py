@@ -1,19 +1,20 @@
-import requests 
-import json
+from common.utils import get_data
+from config import filepath
+import requests
 
-with open('data/data.json', 'r') as f:
-    data = json.load(f)
+data = get_data(filepath)
 
-name = input('Введите свой ник: ').strip()
+nick = input("Enter your nickname: ").strip()
 
-for items in data:
+for item in data:
+    link = item["link"]
+    name = item["name"]
+    user_link = f"{link}/{nick}"
 
-    link = items['link']
-    response = requests.get(f'{link}/{name}')
-
+    response = requests.get(user_link)
     if response.status_code == 200:
-        print('Пользователь Найден')
+        print(f"User found! User link: {user_link}, site name: {name}")
     else:
-        print('Пользователь Не Найден')
+        print("User not found!")
 
 

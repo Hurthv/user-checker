@@ -1,4 +1,7 @@
 [
-    {"link": "https://vk.com", "name": "vk"},
-    {"link": "https://ok.ru", "name": "ok"}
+    {"link": "https://vk.ru", "name": "vk"},
+    {"link": "https://instagram.com", "name": "inst"},
+    {"link": "https://ok.ru", "name": "ok"},
+    {"link": "https://github.com", "name": "github"},
+    {"link": "https://telegram.me", "name": "telegram"}
 ]
