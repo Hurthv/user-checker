@@ -6,7 +6,7 @@ This is an educational project centered on checking your nickname and full name 
 
 '{"link": "https://example.com", "name": "example"}'
 
-# How install project?
+# How to install the project?
 
 1. Prepare a location for downloading the project from GitHub.
 2. 'git clone https://github.com/Hurthv/user-checker'

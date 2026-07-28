@@ -3,5 +3,6 @@
     {"link": "https://instagram.com", "name": "inst"},
     {"link": "https://ok.ru", "name": "ok"},
     {"link": "https://github.com", "name": "github"},
-    {"link": "https://telegram.me", "name": "telegram"}
+    {"link": "https://telegram.me", "name": "telegram"},
+    {"link": "https://www.reddit.com/user", "name": "reddit"}
 ]

@@ -17,12 +17,10 @@ async def check_single_link(client: RequestClass, item: dict):
             print(f"Unable to connect to the {link} site (Status: {response.status_code})")
     except httpx.TimeoutException:
         print(f"Unable to connect to the {link} site. Error: Timeout")
-    except httpx._exceptions as e:
-        print(e)
     except Exception as e:
         print(f"Unable to connect to the {link} site. Error: {e}")
 
-async def link_test(data: list):
+async def test_link(data: list):
     client = RequestClass()
 
     try:
@@ -33,4 +31,4 @@ async def link_test(data: list):
 
     print("The check was successful!")
 
-asyncio.run(link_test(data))
+# asyncio.run(test_link(data))
